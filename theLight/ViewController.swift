@@ -11,6 +11,10 @@ class ViewController: UIViewController {
 
     var isLightOn = Bool.random()
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
